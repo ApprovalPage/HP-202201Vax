@@ -548,13 +548,13 @@ if (reversed == null) { reversed = false; }
 	this.instance_1 = new lib.PHLogoRGBai("synched",0);
 	this.instance_1.setTransform(583.65,68.1,0.35,0.35,0,0,0,201.8,45.3);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(110).to({x:580.65},0).to({x:626.65},12).wait(46));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(110).to({startPosition:0},0).to({x:626.65},12).wait(46));
 
 	// logo
 	this.instance_2 = new lib.HP_logo();
 	this.instance_2.setTransform(582.8,26.35,0.5699,0.5699,0,0,0,0.6,0.6);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(110).to({x:579.8},0).to({x:625.8},12).wait(46));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(110).to({x:625.8},12).wait(46));
 
 	// bkgd
 	this.shape_1 = new cjs.Shape();
@@ -616,7 +616,7 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/HP_Vax_grandson_728x90_atlas_1.jpg?1641520120847", id:"HP_Vax_grandson_728x90_atlas_1"}
+		{src:"images/HP_Vax_grandson_728x90_atlas_1.jpg?1641520923036", id:"HP_Vax_grandson_728x90_atlas_1"}
 	],
 	preloads: []
 };
