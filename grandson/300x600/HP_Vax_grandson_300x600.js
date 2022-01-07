@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"HP_Vax_daughter_300x600_atlas_1", frames: [[0,0,600,1200]]}
+		{name:"HP_Vax_grandson_300x600_atlas_1", frames: [[0,0,600,1200]]}
 ];
 
 
@@ -26,8 +26,8 @@ lib.ssMetadata = [
 
 
 
-(lib.daughter_300x600 = function() {
-	this.initialize(ss["HP_Vax_daughter_300x600_atlas_1"]);
+(lib.grandson_300x600 = function() {
+	this.initialize(ss["HP_Vax_grandson_300x600_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -491,7 +491,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.HP_Vax_daughter_300x600 = function(mode,startPosition,loop,reversed) {
+(lib.HP_Vax_grandson_300x600 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -603,7 +603,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_7).to({alpha:1},19,cjs.Ease.quadInOut).wait(102).to({scaleX:1.4924,scaleY:1.4924,x:106.25,y:416.6},26,cjs.Ease.quadInOut).wait(38));
 
 	// PIC
-	this.instance_8 = new lib.daughter_300x600();
+	this.instance_8 = new lib.grandson_300x600();
 	this.instance_8.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(185));
@@ -621,7 +621,7 @@ lib.properties = {
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/HP_Vax_daughter_300x600_atlas_1.jpg?1641514416650", id:"HP_Vax_daughter_300x600_atlas_1"}
+		{src:"images/HP_Vax_grandson_300x600_atlas_1.jpg?1641519669139", id:"HP_Vax_grandson_300x600_atlas_1"}
 	],
 	preloads: []
 };

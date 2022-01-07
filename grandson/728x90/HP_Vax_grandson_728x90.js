@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"HP_Vax_daughter_300x600_atlas_1", frames: [[0,0,600,1200]]}
+		{name:"HP_Vax_grandson_728x90_atlas_1", frames: [[0,0,1456,180]]}
 ];
 
 
@@ -26,8 +26,8 @@ lib.ssMetadata = [
 
 
 
-(lib.daughter_300x600 = function() {
-	this.initialize(ss["HP_Vax_daughter_300x600_atlas_1"]);
+(lib.grandson_728x90 = function() {
+	this.initialize(ss["HP_Vax_grandson_728x90_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -491,7 +491,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.HP_Vax_daughter_300x600 = function(mode,startPosition,loop,reversed) {
+(lib.HP_Vax_grandson_728x90 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -502,7 +502,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [0,184];
+	this.actionFrames = [0,167];
 	// timeline functions:
 	this.frame_0 = function() {
 		if(!this.alreadyyExecuted){
@@ -514,114 +514,109 @@ if (reversed == null) { reversed = false; }
 		gotoAndPlay(2);
 		}
 	}
-	this.frame_184 = function() {
-		//if(!this.alreadyExecuted){
-		//this.alreadyExecuted=true;
-		//this.loopNum=1;
-		//} else {
-		//this.loopNum++;
-		//if(this.loopNum==2){
+	this.frame_167 = function() {
+		if(!this.alreadyExecuted){
+		this.alreadyExecuted=true;
+		this.loopNum=1;
+		} else {
+		this.loopNum++;
+		if(this.loopNum==2){
 		this.stop();
-		//}
-		//}
+		}
+		}
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(184).call(this.frame_184).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(167).call(this.frame_167).wait(1));
 
 	// border
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").ss(1,2,0,3).p("EgXWguyMAutAAAMAAABdlMgutAAAg");
-	this.shape.setTransform(150,300);
+	this.shape.graphics.f().s("#000000").ss(1,2,0,3).p("Eg4ygG8MBxlAAAIAAN5MhxlAAAg");
+	this.shape.setTransform(364,45);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(185));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(168));
 
 	// CTA
 	this.instance = new lib.CTA();
-	this.instance.setTransform(-35.4,553.15,0.8769,0.8769);
+	this.instance.setTransform(392.6,53.55,0.8769,0.8769);
+	this.instance.alpha = 0;
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(168).to({_off:false},0).to({x:64.6},9,cjs.Ease.quadInOut).wait(8));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(115).to({_off:false},0).to({x:492.6,alpha:1},9,cjs.Ease.quadInOut).wait(44));
 
 	// PH logo
 	this.instance_1 = new lib.PHLogoRGBai("synched",0);
-	this.instance_1.setTransform(149.9,568.4,0.43,0.43,0,0,0,201.5,45.1);
+	this.instance_1.setTransform(583.65,68.1,0.35,0.35,0,0,0,201.8,45.3);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(157).to({startPosition:0},0).to({x:197.9},18,cjs.Ease.quadInOut).wait(10));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(110).to({x:580.65},0).to({x:626.65},12).wait(46));
 
 	// logo
 	this.instance_2 = new lib.HP_logo();
-	this.instance_2.setTransform(150.35,518.75,0.5699,0.5699,0,0,0,0.6,0.6);
+	this.instance_2.setTransform(582.8,26.35,0.5699,0.5699,0,0,0,0.6,0.6);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(157).to({x:197.8},18,cjs.Ease.quadInOut).wait(10));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(110).to({x:579.8},0).to({x:625.8},12).wait(46));
 
 	// bkgd
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FFECCD").s().p("A3WJCIAAyDMAutAAAIAASDg");
-	this.shape_1.setTransform(150,541.8);
+	this.shape_1.graphics.f("#FFECCD").s().p("A3WHCIAAuDMAutAAAIAAODg");
+	this.shape_1.setTransform(578,45);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(185));
-
-	// HEAD2b
-	this.instance_3 = new lib.HEAD2GIVE();
-	this.instance_3.setTransform(86.75,381.95,1.4924,0.0394,0,0,0,47.1,7.6);
-	this.instance_3.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,3);
-	this.instance_3._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(77).to({_off:false},0).to({regY:0,scaleY:1.4924,y:383.65},9,cjs.Ease.quadIn).wait(35).to({regY:0.1,scaleX:0.97,scaleY:0.97,x:60.65,y:412.1},26,cjs.Ease.quadInOut).wait(38));
+	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(168));
 
 	// HEAD2a-top
-	this.instance_4 = new lib.HEAD2GET();
-	this.instance_4.setTransform(86.75,383.8,1.4924,1.4924,0,0,0,47.1,0.1);
-	this.instance_4.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,3);
-	this.instance_4._off = true;
+	this.instance_3 = new lib.HEAD2GET();
+	this.instance_3.setTransform(55.7,45.05,0.65,0.65,0,0,0,47.2,0.1);
+	this.instance_3.alpha = 0;
+	this.instance_3.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,3);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(121).to({_off:false},0).to({regX:47.2,regY:0.2,scaleX:0.97,scaleY:0.97,x:60.75,y:282.35},26,cjs.Ease.quadInOut).wait(38));
-
-	// HEAD2a
-	this.instance_5 = new lib.HEAD2GET();
-	this.instance_5.setTransform(86.75,383.65,1.4924,1.4924,0,0,0,47.1,0);
-	this.instance_5.alpha = 0;
-	this.instance_5.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,3);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({alpha:1},19,cjs.Ease.quadInOut).wait(48).to({regY:7.6,scaleY:0.0394,y:381.95},9,cjs.Ease.quadOut).to({_off:true},1).wait(108));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({alpha:1},16).wait(152));
 
 	// HEAD1-top
+	this.instance_4 = new lib.HEAD1();
+	this.instance_4.setTransform(86.2,48,1,1,0,0,0,64.2,44);
+	this.instance_4.alpha = 0;
+	this.instance_4.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,3);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({alpha:1},16).wait(152));
+
+	// HEAD2b
+	this.instance_5 = new lib.HEAD2GIVE();
+	this.instance_5.setTransform(311.6,45,0.65,0.65,0,0,0,47.1,0);
+	this.instance_5.alpha = 0;
+	this.instance_5.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,3);
+	this.instance_5._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(68).to({_off:false},0).to({alpha:1},16).wait(84));
+
+	// HEAD1
 	this.instance_6 = new lib.HEAD1();
-	this.instance_6.setTransform(155,391.9,2.2513,2.2513,0,0,0,64.2,44.1);
+	this.instance_6.setTransform(342.2,48.1,1,1,0,0,0,64.2,44.1);
+	this.instance_6.alpha = 0;
 	this.instance_6.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,3);
 	this.instance_6._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(121).to({_off:false},0).to({regY:44,scaleX:1.4924,scaleY:1.4924,x:106.25,y:286.65},26,cjs.Ease.quadInOut).wait(38));
-
-	// HEAD1
-	this.instance_7 = new lib.HEAD1();
-	this.instance_7.setTransform(155,391.9,2.2513,2.2513,0,0,0,64.2,44.1);
-	this.instance_7.alpha = 0;
-	this.instance_7.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,3);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).to({alpha:1},19,cjs.Ease.quadInOut).wait(102).to({scaleX:1.4924,scaleY:1.4924,x:106.25,y:416.6},26,cjs.Ease.quadInOut).wait(38));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(68).to({_off:false},0).to({alpha:1},16).wait(84));
 
 	// PIC
-	this.instance_8 = new lib.daughter_300x600();
-	this.instance_8.setTransform(0,0,0.5,0.5);
+	this.instance_7 = new lib.grandson_728x90();
+	this.instance_7.setTransform(-25,0,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(185));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(168));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(62.9,299.5,252.6,301);
+p.nominalBounds = new cjs.Rectangle(339,41,389.5,67);
 // library properties:
 lib.properties = {
 	id: '0957C5EC3B874C629166840920B09671',
-	width: 300,
-	height: 600,
+	width: 728,
+	height: 90,
 	fps: 24,
 	color: "#999999",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/HP_Vax_daughter_300x600_atlas_1.jpg?1641514416650", id:"HP_Vax_daughter_300x600_atlas_1"}
+		{src:"images/HP_Vax_grandson_728x90_atlas_1.jpg?1641520120847", id:"HP_Vax_grandson_728x90_atlas_1"}
 	],
 	preloads: []
 };
